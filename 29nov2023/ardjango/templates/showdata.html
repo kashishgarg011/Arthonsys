@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>Register View Details</h1> <br>
+  </div>
+  <div class="U">
+    {% for i in r %}
+    <ul style="margin-top: 10px;  "> <b>
+        <li scope="row">
+          <style>S.No.&nbsp;&nbsp;{{i.id}}</style>
+          <br> User Name: &nbsp;{{i.user_name}}<br> <br>
+                    <br> Email: &nbsp;{{i.email}}<br> <br>
+          <br> PASSWORD: &nbsp;{{i.password}}<br> <br>
+          <br> GENDER: &nbsp;{{i.gender}}<br> <br>
+                    <br> JOB LOCATION: &nbsp;{{i.city}}<br> <br>
+                    <br> SKILLS: &nbsp;{{i.skill}}<br> <br>
+
+        </li></ul>
+      {% endfor %}
+  </div>
+</body>
+</html>
